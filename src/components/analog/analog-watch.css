@@ -1,0 +1,113 @@
+/* General styles for the analog clock */
+.clock {
+    width: 100%;
+    height: 100%;
+    border: 20px solid black;
+    border-radius: 50%;
+    position: relative;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background: white;
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+    /* Fix for the hands positioning */
+}
+
+.hand {
+    width: 50%;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* Ensure the hand is centered horizontally */
+    transform-origin: 0% 50%;
+    /* Pivot from the center-left of the hand */
+    transform: rotate(90deg);
+    /* Initial rotation for hands (e.g., pointing to 3 o'clock) */
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hour-hand {
+    height: 6px;
+}
+
+.minute-hand {
+    height: 4px;
+}
+
+.second-hand {
+    height: 2px;
+    background: red;
+}
+
+.number {
+    position: absolute;
+    font-size: 24px;
+    transform: translate(-50%, -50%);
+}
+
+.number1 {
+    top: 6.7%;
+    left: 75%;
+}
+
+.number2 {
+    top: 25%;
+    left: 93.3%;
+}
+
+.number3 {
+    top: 50%;
+    left: 100%;
+}
+
+.number4 {
+    top: 75%;
+    left: 93.3%;
+}
+
+.number5 {
+    top: 93.3%;
+    left: 75%;;
+}
+
+.number6 {
+    top: 100%;
+    left: 50%;
+}
+
+.number7 {
+    top: 93.3%;
+    left: 25%;;
+}
+
+.number8 {
+    top: 75%;
+    left: 6.7%;
+}
+
+.number9 {
+    top: 50%;
+    left: 0%;
+}
+
+.number10 {
+    top: 25%;
+    left: 6.7%;
+}
+
+.number11 {
+    top: 6.7%;
+    left: 25%;
+}
+
+.number12 {
+    top: 0%;
+    left: 50%;
+}

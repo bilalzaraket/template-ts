@@ -3,11 +3,24 @@
 
 <head>
     <meta charset="utf-8">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>Watch Application</title>
     <!-- support for mobile touch devices -->
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 </head>
+
 <body>
-    <h1>Empty Page</h1>
+    <div id="clocks-container"></div>
+    <!-- Main Buttons container -->
+    <div class="main-buttons-container">
+        <button id="add-digital-clock-button">Add Digital Clock</button>
+        <button id="add-analog-clock-button">Add Analog Clock</button>
+    </div>
+
+    <!-- TypeScript compiled JavaScript files -->
+    <script src="WatchModel.js"></script>
+    <script src="WatchView.js"></script>
+    <script src="WatchController.js"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>
