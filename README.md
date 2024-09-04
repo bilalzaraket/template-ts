@@ -2,6 +2,10 @@
 
 ### Design Patterns
 
+### **Architecture**
+![UML representation](UML rep)
+
+
 1. **State Pattern**
 
    - The State pattern is utilized to manage the different modes of the clock. This pattern helps in encapsulating the varying behavior associated with the different states (edit modes) of the clock. Specifically, we have implemented the State pattern to handle the various editing states of the clock such as editing hours and minutes. The `EditState` interface defines the common behavior for all states, while specific states like `NoneEditState`, `HoursEditState`, and `MinutesEditState` implement the behavior for each particular mode.
