@@ -1,0 +1,296 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0" version="24.7.10">
+  <diagram name="Page-1" id="TD6_rq6mtsXDkQERzsnA">
+    <mxGraphModel dx="7125" dy="4105" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="53oCryCdGxIXyNBGelM9-25" value="TimeSubject" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="-550" width="160" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-26" value="-observers: Observer[]&lt;div&gt;-seconds: number&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="53oCryCdGxIXyNBGelM9-25">
+          <mxGeometry y="26" width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-27" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="53oCryCdGxIXyNBGelM9-25">
+          <mxGeometry y="70" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-28" value="+addObserver(observer: Observer): void&lt;div&gt;+removeObserver(observer: Observer): void&lt;br&gt;&lt;/div&gt;&lt;div&gt;+notifyObservers(): void&lt;br&gt;&lt;/div&gt;&lt;div&gt;+start(): void&lt;br&gt;&lt;/div&gt;&lt;div&gt;+getSeconds(): number&lt;br&gt;&lt;/div&gt;&lt;div&gt;-incrementTime(): void&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="53oCryCdGxIXyNBGelM9-25">
+          <mxGeometry y="78" width="160" height="132" as="geometry" />
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-29" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;EditState&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+increaseTime(controller: WatchController): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+enterEditMode(controller: WatchController): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+updateBlinking(view: WatchView): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="737.5" y="-170" width="265" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-63" value="ClockFactory" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-450" y="-490" width="160" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-64" value="&lt;div&gt;-containerIdCounter: number&amp;nbsp;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="53oCryCdGxIXyNBGelM9-63">
+          <mxGeometry y="26" width="160" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-65" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="53oCryCdGxIXyNBGelM9-63">
+          <mxGeometry y="80" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-66" value="+createClock(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="53oCryCdGxIXyNBGelM9-63">
+          <mxGeometry y="88" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-74" value="&lt;i style=&quot;font-weight: 400;&quot;&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br style=&quot;font-weight: 400;&quot;&gt;WatchModel" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-560" y="170" width="310" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-78" value="+getTime(): [number, number, number, boolean]&lt;div&gt;+setTimeZoneOffset(timezoneOffset: number): void&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+setIs24HourFormat(is24Hour: boolean): void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+setHours(hours: number): void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+setMinutes(minutes: number): void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+setSeconds(seconds: number): void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+incrementHours(): void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+incrementMinutes(): void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+incrementSeconds(): void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+getHours(): number&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+getMinutes(): number&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+getSeconds(): number&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+getIs24HourFormat(): boolean&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+getTimeZoneOffset(): number&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+toggleFormat(): void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+resetToCurrentTime(): void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="53oCryCdGxIXyNBGelM9-74">
+          <mxGeometry y="50" width="310" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-79" value="WatchModelImpl" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-505" y="540" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-80" value="&lt;div&gt;&lt;div&gt;&lt;div&gt;-hours: number&lt;/div&gt;&lt;div&gt;-minutes: number&lt;/div&gt;&lt;div&gt;-seconds: number&lt;/div&gt;&lt;div&gt;-timezoneOffset: number&lt;/div&gt;&lt;div&gt;-is24HourFormat: boolean&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="53oCryCdGxIXyNBGelM9-79">
+          <mxGeometry y="26" width="200" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-81" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="53oCryCdGxIXyNBGelM9-79">
+          <mxGeometry y="100" width="200" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-83" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;WatchView&lt;/i&gt;&lt;/span&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="245" y="170" width="350" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-84" value="&lt;div&gt;&lt;div&gt;+updateTime(time: [number, number, number, boolean]): void&lt;/div&gt;&lt;div&gt;+removeBackground(): void&lt;/div&gt;&lt;div&gt;+getRemoveButton(): HTMLButtonElement&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="53oCryCdGxIXyNBGelM9-83">
+          <mxGeometry y="50" width="350" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-85" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;DigitalWatchView&lt;/i&gt;&lt;/span&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="445" y="340" width="350" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-86" value="&lt;div&gt;+toggleBackgroundColor(): void&lt;/div&gt;&lt;div&gt;+toggleBlinking(part: &#39;hours&#39; | &#39;minutes&#39;, blink: boolean): void&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="53oCryCdGxIXyNBGelM9-85">
+          <mxGeometry y="50" width="350" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-87" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;AnalogWatchView&lt;/i&gt;&lt;/span&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="340" width="350" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-89" value="HoursEditState" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="600" y="60" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-90" value="MinutesEditState" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="815" y="60" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-91" value="NoneEditState" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="60" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-95" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.492;entryY=1.057;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="53oCryCdGxIXyNBGelM9-87" target="53oCryCdGxIXyNBGelM9-84">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="235" y="310" as="sourcePoint" />
+            <mxPoint x="395" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-97" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="53oCryCdGxIXyNBGelM9-85">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="870" y="240" as="sourcePoint" />
+            <mxPoint x="415" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-103" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Observer&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+update(seconds: number): void&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-120" y="-290" width="190" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-104" value="WatchController" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-115" y="-170" width="180" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-105" value="&lt;div&gt;&lt;div&gt;-model: WatchModel&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;-view: WatchView&lt;br&gt;&lt;/div&gt;&lt;div&gt;-editState: EditState&lt;br&gt;&lt;/div&gt;&lt;div&gt;-timeSubject: TimeSubject&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="53oCryCdGxIXyNBGelM9-104">
+          <mxGeometry y="26" width="180" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-106" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="53oCryCdGxIXyNBGelM9-104">
+          <mxGeometry y="100" width="180" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-107" value="+update(seconds: number): void&lt;div&gt;+incrementHours(): void&lt;br&gt;&lt;/div&gt;&lt;div&gt;+incrementMinutes(): void&lt;br&gt;&lt;/div&gt;&lt;div&gt;+setEditState(state: EditState): void&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="53oCryCdGxIXyNBGelM9-104">
+          <mxGeometry y="108" width="180" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-112" value="" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.988;exitY=0.781;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.548;entryY=1.037;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="53oCryCdGxIXyNBGelM9-105" target="53oCryCdGxIXyNBGelM9-28">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="100" y="-140" as="sourcePoint" />
+            <mxPoint x="260" y="-140" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="388" y="-86" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-114" value="Observes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="53oCryCdGxIXyNBGelM9-112">
+          <mxGeometry x="0.601" y="1" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-137" value="n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="53oCryCdGxIXyNBGelM9-112">
+          <mxGeometry x="-0.8701" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-138" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="53oCryCdGxIXyNBGelM9-112">
+          <mxGeometry x="0.9436" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-113" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;exitX=0.013;exitY=0.598;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="53oCryCdGxIXyNBGelM9-29">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="270" y="-50" as="sourcePoint" />
+            <mxPoint x="64" y="-74" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-139" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="53oCryCdGxIXyNBGelM9-113">
+          <mxGeometry x="0.8877" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-140" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="53oCryCdGxIXyNBGelM9-113">
+          <mxGeometry x="-0.9472" y="-1" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-116" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=-0.012;entryY=0.248;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="53oCryCdGxIXyNBGelM9-28">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-290" y="-439" as="sourcePoint" />
+            <mxPoint x="290" y="-431.5873015873017" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-130" value="uses" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="53oCryCdGxIXyNBGelM9-116">
+          <mxGeometry x="0.0305" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-150" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="53oCryCdGxIXyNBGelM9-116">
+          <mxGeometry x="-0.8855" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-151" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="53oCryCdGxIXyNBGelM9-116">
+          <mxGeometry x="0.883" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-117" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.858;entryY=0.009;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="53oCryCdGxIXyNBGelM9-74">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-24" y="30" as="sourcePoint" />
+            <mxPoint x="-560" y="60" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-24" y="120" />
+              <mxPoint x="-294" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-149" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="53oCryCdGxIXyNBGelM9-117">
+          <mxGeometry x="0.9051" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-118" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="53oCryCdGxIXyNBGelM9-83">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-25" y="30" as="sourcePoint" />
+            <mxPoint x="-63" y="130" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-25" y="120" />
+              <mxPoint x="420" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-147" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="53oCryCdGxIXyNBGelM9-118">
+          <mxGeometry x="0.8913" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-148" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="53oCryCdGxIXyNBGelM9-118">
+          <mxGeometry x="-0.9378" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-121" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.498;entryY=1.007;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="53oCryCdGxIXyNBGelM9-79" target="53oCryCdGxIXyNBGelM9-78">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-420" y="530" as="sourcePoint" />
+            <mxPoint x="-265" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-122" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="53oCryCdGxIXyNBGelM9-29">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="870.5" y="60" as="sourcePoint" />
+            <mxPoint x="869.5" y="2" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-123" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="53oCryCdGxIXyNBGelM9-89" target="53oCryCdGxIXyNBGelM9-29">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="820.5" y="70" as="sourcePoint" />
+            <mxPoint x="820" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="655" y="20" />
+              <mxPoint x="870" y="20" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-124" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.455;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1" source="53oCryCdGxIXyNBGelM9-91" target="53oCryCdGxIXyNBGelM9-29">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="880.5" y="70" as="sourcePoint" />
+            <mxPoint x="880" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1080" y="20" />
+              <mxPoint x="870" y="20" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-132" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="53oCryCdGxIXyNBGelM9-104" target="53oCryCdGxIXyNBGelM9-103">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint y="-200" as="sourcePoint" />
+            <mxPoint x="160" y="-200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-133" value="creates" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=-0.006;entryY=0.851;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="53oCryCdGxIXyNBGelM9-105">
+          <mxGeometry x="-0.0852" y="3" relative="1" as="geometry">
+            <mxPoint x="-353" y="-371" as="sourcePoint" />
+            <mxPoint x="-280" y="-220" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-353" y="-81" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-141" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="53oCryCdGxIXyNBGelM9-133">
+          <mxGeometry x="-0.9509" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-144" value="n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="53oCryCdGxIXyNBGelM9-133">
+          <mxGeometry x="0.9282" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-135" value="creates" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0.363;exitY=1.192;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="53oCryCdGxIXyNBGelM9-66" target="53oCryCdGxIXyNBGelM9-83">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-370" y="-270" as="sourcePoint" />
+            <mxPoint x="-450" y="-270" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-392" y="-10" />
+              <mxPoint x="-670" y="-10" />
+              <mxPoint x="-670" y="750" />
+              <mxPoint x="-120" y="750" />
+              <mxPoint x="-120" y="198" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-143" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="53oCryCdGxIXyNBGelM9-135">
+          <mxGeometry x="-0.99" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-146" value="n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="53oCryCdGxIXyNBGelM9-135">
+          <mxGeometry x="0.9856" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-136" value="creates" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0.49;exitY=1.074;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.613;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="53oCryCdGxIXyNBGelM9-66" target="53oCryCdGxIXyNBGelM9-74">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-210" y="-140" as="sourcePoint" />
+            <mxPoint x="-290" y="-140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-142" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="53oCryCdGxIXyNBGelM9-136">
+          <mxGeometry x="-0.9412" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53oCryCdGxIXyNBGelM9-145" value="n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="53oCryCdGxIXyNBGelM9-136">
+          <mxGeometry x="0.9089" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
