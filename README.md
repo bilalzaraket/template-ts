@@ -3,7 +3,7 @@
 ### Design Patterns
 
 ### **Architecture**
-![UML representation](UML rep)
+([UML rep](https://github.com/bilalzaraket/template-ts/blob/master/UML%20rep.svg))
 
 
 1. **State Pattern**
