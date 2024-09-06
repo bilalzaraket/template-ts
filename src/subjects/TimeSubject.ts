@@ -19,6 +19,11 @@ export class TimeSubject {
         this.observers.forEach(observer => observer.update(seconds));
     }
 
+    public getSeconds(): number {
+        const now: Date = new Date();
+        return now.getSeconds();
+    }
+
     public start(): void {
         setInterval(() => {
             this.notifyObservers();
