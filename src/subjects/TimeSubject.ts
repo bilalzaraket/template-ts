@@ -4,6 +4,7 @@ export interface Observer {
 
 export class TimeSubject {
     private observers: Observer[] = [];
+    private seconds: number;
 
     public addObserver(observer: Observer): void {
         this.observers.push(observer);
@@ -14,19 +15,26 @@ export class TimeSubject {
     }
 
     public notifyObservers(): void {
-        const now: Date = new Date();
-        const seconds: number = now.getSeconds(); // Fetch current seconds from the system clock
-        this.observers.forEach(observer => observer.update(seconds));
-    }
-
-    public getSeconds(): number {
-        const now: Date = new Date();
-        return now.getSeconds();
+        this.observers.forEach(observer => observer.update(this.seconds));
     }
 
     public start(): void {
+        const now: Date = new Date();
+        this.seconds = now.getSeconds();
         setInterval(() => {
+            this.incrementTime();
             this.notifyObservers();
         }, 1000);
+    }
+
+    public getSeconds(): number {
+        return this.seconds;
+    }
+
+    private incrementTime(): void {
+        if (this.seconds >= 60) {
+            this.seconds = 0;
+        }
+        this.seconds++;
     }
 }
